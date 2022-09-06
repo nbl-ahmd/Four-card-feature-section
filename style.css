@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+}
+.header{
+ text-align: center;
+ max-width: 505px;
+ width: auto;
+ margin: auto;
+}
+.container{
+    width: auto;
+    max-width: 1110px;
+    margin: 80px auto;
+
+}
+.header h1, .header h2{
+    font-size: 36px;
+    margin: 0;
+    width: 100%;
+}
+.header h1{
+    font-weight: 600;
+}
+.header h2{
+    font-weight: 200;
+   
+}
+.header p{
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 65px 0;
+    grid-column-gap: 30px;
+
+}
+.column{
+
+}
+.img-wrapper{
+    justify-content: end;
+    margin-top: 45px;
+    display: flex;
+}
+.card{
+    box-shadow: 0px 5px 23px 0px rgba(69,117,153,0.2);
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.card-content h3{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+span{
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+.card::after{
+    content: "";
+    
+    height: 5px;
+    width: 100%;
+    position:absolute;
+    left: 0;
+    top:0px;
+    
+
+}
+.cyan::after{
+    background-color: hsl(180, 62%, 55%);
+}
+.red::after{
+    background-color: hsl(0, 78%, 62%);
+}
+.orange::after{
+    background-color: hsl(34, 97%, 64%);
+}
+.blue::after{
+    background-color: hsl(212, 86%, 64%);
+}
+@media (max-width: 375px){
+    .section{
+        grid-template-columns: 1fr;
+        
+    }
+    .container{
+        padding-inline: 30px;
+    }
+    .header h1, .header h2{
+        font-size: 24px;
+    }
+}
